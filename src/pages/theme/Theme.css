@@ -1,0 +1,142 @@
+.conference-section {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: var(--hero-bg-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: var(--desktop-section-padding);
+  font-family: "Inter", sans-serif;
+}
+
+/* Background network effect */
+.overlay-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.15) 2px, transparent 2px),
+    radial-gradient(circle at 20% 70%, rgba(255,255,255,0.15) 2px, transparent 2px),
+    radial-gradient(circle at 40% 30%, rgba(255,255,255,0.12) 2px, transparent 2px),
+    radial-gradient(circle at 70% 40%, rgba(255,255,255,0.12) 2px, transparent 2px),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.15) 2px, transparent 2px),
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255,255,255,0.04) 50%,
+      transparent 100%
+    );
+  background-size: 300px 300px;
+}
+
+/* Content */
+.conference-content {
+  position: relative;
+  z-index: 2;
+}
+
+.conference-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 190, 70, 0.5);
+  border-radius: 999px;
+  color: #f7b53d;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  margin-bottom: 28px;
+  background: rgba(255, 190, 70, 0.05);
+}
+
+.conference-content h2 {
+  color: var(--white-color);
+  font-size:var(--hero-title-font);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+  width: 65vw;
+}
+
+.conference-content p {
+  color: var(--white-color);
+  font-size: var(--hero-p-text);
+  line-height: 1.7;
+  max-width: 800px;
+  font-weight: 300;
+}
+
+.tracks-section {
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.tracks-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+  padding: var(--desktop-section-padding);
+}
+
+.track-card {
+  background: #ffffff;
+  border: 1px solid #d9dde5;
+  border-radius: 14px;
+  padding: 24px;
+  min-height: 220px;
+  transition: 0.25s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.track-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.track-icon {
+  width: 36px;
+  height: 36px;
+  background: #081f57;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.track-number {
+  color: #d59a2e;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.track-card h3 {
+  color: #071942;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.track-card p {
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
