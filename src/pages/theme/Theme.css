@@ -43,7 +43,7 @@
   padding: 8px 16px;
   border: 1px solid rgba(255, 190, 70, 0.5);
   border-radius: 999px;
-  color: #f7b53d;
+  color: var(--gold-color);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.4px;
@@ -57,8 +57,7 @@
   line-height: 1.08;
   font-weight: 800;
   letter-spacing: -2px;
-  margin-bottom: 28px;
-  width: 65vw;
+  margin-bottom: 25px;
 }
 
 .conference-content p {
@@ -71,7 +70,6 @@
 
 .tracks-section {
   width: 100%;
-  padding: 28px;
   display: flex;
   justify-content: center;
 }
@@ -106,36 +104,36 @@
 }
 
 .track-icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   background: #081f57;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--white-color);
   font-size: 18px;
   flex-shrink: 0;
 }
 
 .track-number {
-  color: #d59a2e;
+  color: var(--gold-color);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .track-card h3 {
-  color: #071942;
-  font-size: 18px;
+  color: var(--headings-color);
+  font-size: var(--card-title-text);
   line-height: 1.45;
   font-weight: 800;
   margin-bottom: 14px;
 }
 
 .track-card p {
-  color: #667085;
-  font-size: 16px;
+  color: var(--p-text-color);
+  font-size: var(--card-text);
   line-height: 1.7;
   font-weight: 400;
 }

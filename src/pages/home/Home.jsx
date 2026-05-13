@@ -139,7 +139,7 @@ const submissionTypes = [
         {/* LEFT CONTENT */}
         <div className="hero-left">
           <div className="hero-badge">
-            ✨ INTERNATIONAL CONFERENCE
+           INTERNATIONAL CONFERENCE
           </div>
 
           <h1 className="hero-title">
@@ -149,7 +149,7 @@ const submissionTypes = [
           </h1>
 
           <p className="hero-description">
-            AI, Emerging Technology & Data Science in Education — advancing
+            AI, Emerging Technology & Data Science in Education advancing
             ethical research and global collaboration from the Global South.
           </p>
 

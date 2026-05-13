@@ -7,18 +7,18 @@ const Navbar = () => {
     <nav className="navbar">
 
       {/* Left: Logo + Title */}
+      <NavLink
+          to="/">
       <div className="navbar-left">
-
-        <div className="logo-box">
+        <div className="logo-box"> 
           <span className="logo-icon">🎓</span>
         </div>
-
         <div className="logo-text">
           <div className="logo">AI-ETDS 2026</div>
           <div className="subtitle">STELLENBOSCH · UWC</div>
         </div>
-
       </div>
+      </NavLink>
 
       {/* Center: Navigation */}
       <div className="navbar-center">

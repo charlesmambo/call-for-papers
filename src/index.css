@@ -15,17 +15,23 @@
 
   --p-text-color:#5f6880;
   --headings-color:#0b1a46;
-  --gold-color:#d4a017;
+  --gold-color:#e7b84f;
 
   --bg-color:#f9fafb;
   --hero-bg-color:linear-gradient(90deg, #03123d 0%, #071d55 100%);
 
   --title-font:2.4rem;
   --hero-title-font:64px;
-  --hero-p-text:1.1rem;
+  --hero-p-text:1.2rem;
 
   --grid-gap:1.4rem;
   --white-color: #efefef;
+
+  --btn-padding:1rem 1.5rem;
+
+  --desc-text:1.2rem;
+  --card-text:1rem;
+  --card-title-text:1.2rem;
 }
 *{
   margin: 0;
