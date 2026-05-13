@@ -535,3 +535,265 @@ text-align: center;
 }
 
 
+.publication-section {
+  width: 100%;
+  background: var(--bg-color);
+  padding: var(--desktop-section-padding);
+  display: flex;
+  justify-content: center;
+}
+/* Heading */
+
+.publication-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.publication-number {
+  color: var(--gold-color);
+  font-size:1rem;
+  font-weight: 700;
+}
+
+.publication-heading h2 {
+  font-size:var(--title-font);
+  font-weight: 800;
+  color: var(--headings-color);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* Cards */
+
+.publication-card,
+.small-card {
+  background: #f8f8f8;
+  border: 1px solid #d7dce3;
+  border-radius: 12px;
+  padding: 28px 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  transition: 0.3s ease;
+}
+
+.publication-card:hover,
+.small-card:hover {
+  transform: translateY(-2px);
+}
+
+.publication-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--p-text-color);
+}
+
+.bold {
+  font-weight: 800;
+  color: var(--headings-color);
+}
+
+.small-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--headings-color);
+}
+
+.small-card span {
+  font-weight: 400;
+  color: var(--p-text-color);
+}
+
+.programme-section {
+  width: 100%;
+  background: #fff;
+  padding: var(--desktop-section-padding);
+  display: flex;
+  justify-content: center;
+}
+
+/* Heading */
+
+.programme-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.programme-number {
+  color: var(--gold-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.programme-heading h2 {
+  font-size: var(--title-font);
+  font-weight: 800;
+  color: var(--headings-color);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* Cards */
+
+.programme-card {
+  background: #f8f8f8;
+  border: 1px solid #d7dce3;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  transition: 0.3s ease;
+}
+
+.programme-card:hover {
+  transform: translateY(-2px);
+}
+
+.programme-card p {
+  color: var(--p-text-color);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Feature title */
+
+.programme-card h3 {
+  color: var(--headings-color);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+/* List */
+
+.programme-card ul {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.programme-card li {
+  color: var(--p-text-color);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.registration-section {
+  width: 100%;
+  background: var(--bg-color);
+  padding: var(--desktop-section-padding);
+  display: flex;
+  justify-content: center;
+}
+/* Heading */
+
+.registration-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.registration-number {
+  color: var(--gold-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.registration-heading h2 {
+  font-size: var(--title-font);
+  font-weight: 800;
+  color: var(--headings-color);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.registration-content p {
+  color: var(--p-text-color);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.cg-container {
+  margin: 0 auto;
+  padding: var(--desktop-section-padding);
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+.cg-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cg-number {
+  color: var(--gold-color); /* gold tone */
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.cg-header h2 {
+  font-size: var(--title-font);
+  font-weight: 700;
+  color: var(--headings-color); /* deep navy */
+  margin: 0;
+}
+
+/* Subtext */
+.cg-subtext {
+  font-size: 1.1rem;
+  color: var(--p-text-color);
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.cg-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cg-card {
+  flex: 1;
+  min-width: 280px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.2s ease;
+}
+
+.cg-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cg-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--headings-color);
+}
+
+.cg-card p {
+  margin: 0;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+/* Description */
+.cg-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--p-text-color);
+}

@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer'
 import Theme from './pages/theme/Theme'
 import About from './pages/about/About'
 import Paper from './pages/papers/Paper'
+import Contact from './pages/contact/Contact'
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/themes" element={<Theme />} />
         <Route path="/about" element={<About />} />
-        <Route path="/papers" element={<Paper />} />
+        <Route path="/call-for-papers" element={<Paper />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
      <Footer/>
     </div>

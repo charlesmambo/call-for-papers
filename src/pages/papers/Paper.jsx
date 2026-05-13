@@ -130,6 +130,16 @@ const submissions = [
     meta: "SUBMISSION SHOULD INCLUDE: 500–800 WORD DESCRIPTION OF OBJECTIVES, AUDIENCE, AND STRUCTURE."
   }
 ];
+
+  const programmeItems = [
+    "Keynote addresses by leading scholars and practitioners in AI, data science, and education.",
+
+    "Parallel paper and panel sessions aligned with the conference themes.",
+
+    "Workshops and demonstrations on AI tool implementation, learning analytics, and digital pedagogy.",
+
+    "Networking events to foster collaboration between institutions, sectors, and countries.",
+  ];
   return (
     <div>
     <section className="call-for-papers">
@@ -388,6 +398,130 @@ const submissions = [
       </div>
     </section>
 
+<section className="publication-section">
+      <div className="publication-container">
+        {/* Heading */}
+        <div className="publication-heading">
+          <span className="publication-number">8.</span>
+
+          <h2>
+            Publication Opportunities (edited book pathway)
+          </h2>
+        </div>
+
+        {/* Main Card */}
+        <div className="publication-card">
+          <p>
+            <span className="bold">
+              Edited volume opportunity (planned):
+            </span>{" "} <br/>
+            Following the conference, the Organising Committee intends to
+            develop a curated edited volume proposal (e.g., Palgrave or
+            Routledge), subject to publisher approval. Selected high-quality
+            conference papers will be invited for substantial revision and
+            inclusion in an edited book aligned to some of the thematic strands.
+            Selection will be based on peer review outcomes, thematic fit, and
+            publication readiness.
+          </p>
+        </div>
+
+        {/* Small Cards */}
+        <div className="small-card">
+          <h3>Edited Book</h3>
+        </div>
+
+        <div className="small-card">
+          <h3>
+            Special Book <span>Lesly Swartz – connect</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+ <section className="programme-section">
+      <div className="programme-container">
+        {/* Heading */}
+        <div className="programme-heading">
+          <span className="programme-number">9.</span>
+
+          <h2>Conference Format and Programme</h2>
+        </div>
+
+        {/* Intro Card */}
+        <div className="programme-card">
+          <p>
+            The conference will be held in Stellenbosch, South Africa, with
+            details on in-person and/or hybrid participation to be communicated
+            in due course.
+          </p>
+        </div>
+
+        {/* Programme Features */}
+        <div className="programme-card">
+          <h3>The programme will feature:</h3>
+
+          <ul>
+            {programmeItems.map((item, index) => (
+              <li key={index}>
+                <RiCircleFill className='bullet g-dot'/>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<section className="registration-section">
+      <div className="registration-container">
+        {/* Heading */}
+        <div className="registration-heading">
+          <span className="registration-number">10.</span>
+
+          <h2>Registration and Fees</h2>
+        </div>
+
+        {/* Content */}
+        <div className="registration-content">
+          <p>
+            Details on registration categories and fees (e.g. standard,
+            student, early-bird, virtual attendance where applicable) will be
+            published on the conference website. Concessionary rates for
+            postgraduate students and participants from low-resource
+            institutions will be considered, subject to available funding.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section className="cg-container">
+      <div className="cg-header">
+        <span className="cg-number">11.</span>
+        <h2>Contact and Governance</h2>
+      </div>
+
+      <p className="cg-subtext">For enquiries, please contact:</p>
+
+      <div className="cg-cards">
+        <div className="cg-card">
+          <h3>Prof. Anass Bayaga</h3>
+          <p>abayaga@sun.ac.za</p>
+        </div>
+
+        <div className="cg-card">
+          <h3>Dr Ibrahim Harun</h3>
+          <p>iharun@uwc.ac.za</p>
+        </div>
+      </div>
+
+      <p className="cg-description">
+        The conference operates under the academic and ethical policies of the
+        Faculty of Education, Stellenbosch University, and the Faculty of
+        Education, University of the Western Cape, and adheres to international
+        standards for responsible research and scholarly publishing.
+      </p>
+    </section>
+    
     </div>
   )
 }
