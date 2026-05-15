@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f3f4f6;
+  background-color: #fff;
   border-bottom: 1px solid #e5e7eb;
   padding: var(--desktop-navbar-padding);
   font-family: system-ui, -apple-system, sans-serif;
@@ -59,6 +59,13 @@
 .nav-item:hover {
   color: #111827;
 }
+.navbar-left {
+  width: 240px;
+}
+.navbar-left img {
+  width: 100%;
+  /* margin-bottom: -0.5rem; */
+}
 
 /* Active item (this is the important visual detail) */
 .nav-item.active {
@@ -72,7 +79,7 @@
 }
 
 /* Right CTA */
-.navbar-right .cta-button {
+.cta-button {
   background-color: #eab308;
   border: none;
   padding: 0.5rem 1rem;

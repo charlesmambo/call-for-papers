@@ -4,7 +4,8 @@ import { SlCalender } from "react-icons/sl";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
 import { LiaGraduationCapSolid } from "react-icons/lia";
-
+import { NavLink } from 'react-router-dom';
+import LOGO from '../../assets/st.png'
 
 const Footer = () => {
   return (
@@ -12,11 +13,12 @@ const Footer = () => {
       <div className="footer-container">
         {/* LEFT */}
         <div className="footer-brand">
+          <NavLink
+                    to="/">
           <div className="footer-logo">
-            <div className="logo-box"><LiaGraduationCapSolid />
-            </div>
-            <h2>AI-ETDS 2026</h2>
+            <img src={LOGO} alt="" />
           </div>
+          </NavLink>
 
           <p className="footer-description">
             International Conference on AI-Powered Emerging Technology and
@@ -46,19 +48,37 @@ const Footer = () => {
         <div className="footer-links">
           <h4>CONFERENCE</h4>
 
-          <a href="/">Home</a>
-          <a href="/">Themes</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
+                 <NavLink
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+          
+                  <NavLink
+                    to="/themes"
+                  >
+                    Themes
+                  </NavLink>
+          
+                  <NavLink
+                    to="/about"
+                  >
+                    About
+                  </NavLink>
+          
+                  <NavLink
+                    to="/contact"
+                  >
+                    Contact
+                  </NavLink>
         </div>
 
         {/* RIGHT */}
         <div className="footer-links">
           <h4>HOSTS</h4>
 
-          <a href="/">Stellenbosch University</a>
-          <a href="/">University of the Western Cape</a>
-          <a href="/">Faculty of Education</a>
+          <a >Stellenbosch University</a>
+          <a >University of the Western Cape</a>
         </div>
       </div>
 

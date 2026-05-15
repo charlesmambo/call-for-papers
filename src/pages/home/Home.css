@@ -3,10 +3,10 @@
   min-height: 80vh;
   background:
     linear-gradient(
-      rgba(4, 18, 61, 0.92),
-      rgba(4, 18, 61, 0.92)
+      rgba(4, 18, 61, 0.664),
+      rgba(4, 18, 61, 0.767)
     ),
-    url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1974&auto=format&fit=crop")
+    url("/src/assets/utw.png")
       center/cover no-repeat;
 
   overflow: hidden;
@@ -22,8 +22,8 @@
   background: linear-gradient(
     90deg,
     rgba(4, 18, 61, 0.95) 0%,
-    rgba(4, 18, 61, 0.7) 50%,
-    rgba(4, 18, 61, 0.95) 100%
+    rgba(4, 18, 61, 0.7) 30%,
+    rgba(4, 18, 61, 0.95) 50%
   );
 }
 

@@ -12,7 +12,7 @@ import { HiOutlineDocumentText } from "react-icons/hi2";
 import { RiTvLine } from "react-icons/ri";
 import { FiMessageSquare } from "react-icons/fi";
 import { VscSettings } from "react-icons/vsc";
-
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
  const cards = [
@@ -129,6 +129,8 @@ const submissionTypes = [
     tag: "HANDS-ON",
   },
 ];
+
+const navigate = useNavigate();
   return  (
 
       <div>
@@ -156,27 +158,31 @@ const submissionTypes = [
           <div className="hero-info">
             <div className="info-item">
               <SlCalender size={18} />
-              <span>15–18 February 2027</span>
+              <span>15 Feb 2027</span>
             </div>
 
             <div className="info-item">
               <GrLocation size={18} />
-              <span>Stellenbosch, South Africa</span>
+              <span>Venue: Stellenbosch, South Africa</span>
             </div>
 
             <div className="info-item">
               <LuGraduationCap size={18} />
-              <span>Stellenbosch · UWC</span>
+              <span>Stellenbosch University & University of the Western Cape</span>
             </div>
           </div>
 
           <div className="hero-buttons">
-            <button className="submit-btn">
+            <button className="submit-btn" 
+            onClick={() => navigate('/contact')}
+            >
               Submit Abstract
               <IoMdArrowForward  size={18} />
             </button>
 
-            <button className="theme-btn">
+            <button className="theme-btn"
+            onClick={() => navigate('/themes')}
+            >
               View Themes
             </button>
           </div>
@@ -237,7 +243,9 @@ const submissionTypes = [
             technologies that shape inclusive, equitable education.
           </p>
 
-          <button className="learn-btn">
+          <button className="learn-btn" 
+          onClick={() => navigate('/about')}
+          >
             Learn more
             <IoMdArrowForward  size={18} />
           </button>
@@ -282,7 +290,9 @@ const submissionTypes = [
       </div>
 
       <div className="themes-footer">
-        <button className="explore-btn">
+        <button className="explore-btn"
+        onClick={() => navigate('/themes')}
+        >
           Explore all themes →
         </button>
       </div>

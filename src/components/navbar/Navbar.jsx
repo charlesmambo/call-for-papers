@@ -1,6 +1,7 @@
 import React from 'react';
 import '../navbar/Navbar.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import LOGO from '../../assets/utc-logo.png'
 
 const Navbar = () => {
   return (
@@ -10,13 +11,7 @@ const Navbar = () => {
       <NavLink
           to="/">
       <div className="navbar-left">
-        <div className="logo-box"> 
-          <span className="logo-icon">🎓</span>
-        </div>
-        <div className="logo-text">
-          <div className="logo">AI-ETDS 2026</div>
-          <div className="subtitle">STELLENBOSCH · UWC</div>
-        </div>
+       <img src={LOGO} alt="" />
       </div>
       </NavLink>
 
@@ -62,20 +57,14 @@ const Navbar = () => {
 
         <NavLink
           to="/contact"
-          className={({ isActive }) =>
-            isActive ? "nav-item active" : "nav-item"
-          }
         >
-          Contact
-        </NavLink>
-
-      </div>
-
+         
       {/* Right: CTA */}
-      <div className="navbar-right">
         <button className="cta-button">
           Submit Abstract
         </button>
+        </NavLink>
+
       </div>
 
     </nav>
