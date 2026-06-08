@@ -727,6 +727,16 @@
   color: var(--headings-color);
   margin-bottom: 40px;
 }
-
-
+.submission-section {
+  padding: var(--mobile-section-padding) !important;
+}
+.submission-header {
+  text-align:left;
+  margin-bottom: 30px;
+}
+.submission-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--grid-gap);
+}
 }
