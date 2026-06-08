@@ -16,7 +16,7 @@ const Footer = () => {
           <NavLink
                     to="/">
           <div className="footer-logo">
-            <img src={LOGO} alt="" />
+            <img src={LOGO} alt="" loading="lazy"/>
           </div>
           </NavLink>
 

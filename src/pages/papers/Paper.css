@@ -536,11 +536,13 @@ text-align: center;
 
 
 .publication-section {
-  width: 100%;
   background: var(--bg-color);
   padding: var(--desktop-section-padding);
   display: flex;
-  justify-content: center;
+}
+.publication-container,
+.programme-container{
+  width: 100%;
 }
 /* Heading */
 
@@ -606,11 +608,9 @@ text-align: center;
 }
 
 .programme-section {
-  width: 100%;
   background: #fff;
   padding: var(--desktop-section-padding);
   display: flex;
-  justify-content: center;
 }
 
 /* Heading */
@@ -646,6 +646,7 @@ text-align: center;
   margin-bottom: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
   transition: 0.3s ease;
+  width: 100%;
 }
 
 .programme-card:hover {

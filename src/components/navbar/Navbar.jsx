@@ -11,7 +11,7 @@ const Navbar = () => {
       <NavLink
           to="/">
       <div className="navbar-left">
-       <img src={LOGO} alt="" />
+       <img src={LOGO} alt="" loading="lazy"/>
       </div>
       </NavLink>
 

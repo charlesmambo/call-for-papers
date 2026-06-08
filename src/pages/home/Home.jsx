@@ -72,24 +72,20 @@ const Home = () => {
 const dates = [
   {
     title: "ABSTRACT SUBMISSION",
-    date: "10 June 2026",
+    date: "20 July 2026",
     active: true,
   },
   {
     title: "ABSTRACT NOTIFICATION",
-    date: "2 July 2026",
+    date: "3 August 2026",
   },
   {
     title: "FULL PAPER DEADLINE",
-    date: "4 August 2026",
-  },
-  {
-    title: "FULL PAPER NOTIFICATION",
-    date: "5 September 2026",
+    date: "5 October 2026",
   },
   {
     title: "FINAL PAPER & REGISTRATION",
-    date: "5 November 2026",
+    date: "24 November 2026",
   },
 ];
 const submissionTypes = [
@@ -158,7 +154,7 @@ const navigate = useNavigate();
           <div className="hero-info">
             <div className="info-item">
               <SlCalender size={18} />
-              <span>15 Feb 2027</span>
+              <span>15–18 February 2027</span>
             </div>
 
             <div className="info-item">
@@ -194,27 +190,27 @@ const navigate = useNavigate();
 
           <h3>Abstract Submission</h3>
 
-          <p className="deadline-date">10 June 2026</p>
+          <p className="deadline-date">20 July 2026</p>
 
           <div className="deadline-list">
             <div className="deadline-row">
               <span>Abstract Deadline</span>
-              <strong>10 Jun 2026</strong>
-            </div>
-
-            <div className="deadline-row">
-              <span>Full Papers</span>
-              <strong>4 Aug 2026</strong>
+              <strong>20 July 2026</strong>
             </div>
 
             <div className="deadline-row">
               <span>Notification</span>
-              <strong>5 Sep 2026</strong>
+              <strong>3 August 2026</strong>
+            </div>
+
+            <div className="deadline-row">
+              <span>Full Papers</span>
+              <strong>5 October 2026</strong>
             </div>
 
             <div className="deadline-row">
               <span>Registration</span>
-              <strong>5 Nov 2026</strong>
+              <strong>24 November 2026</strong>
             </div>
           </div>
         </div>

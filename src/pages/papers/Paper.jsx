@@ -79,23 +79,15 @@ const topics = [
 const dates = [
   {
     title: "Abstract submission deadline",
-    date: "10 June 2026",
+    date: "20 July 2026",
   },
   {
     title: "Notification of abstract acceptance",
-    date: "2 July 2026",
-  },
-  {
-    title: "Full paper / extended submission deadline",
-    date: "4 August 2026",
-  },
-  {
-    title: "Notification of acceptance (full submissions)",
-    date: "5 September 2026",
+    date: "3 August 2026",
   },
   {
     title: "Final paper submission & registration deadline",
-    date: "5 November 2026",
+    date: "5 October 2026",
   },
   {
     title: "Conference dates",
@@ -157,7 +149,7 @@ const submissions = [
         <p>
           Hosted by the Faculty of Education, Stellenbosch University, in
           partnership with the Faculty of Education, University of the Western
-          Cape. Dates: 15 Feb 2027 · Venue: Stellenbosch, South Africa.
+          Cape. Dates: 15-18 Feb 2027 · Venue: Stellenbosch, South Africa.
         </p>
       </div>
     </section>
@@ -410,7 +402,7 @@ const submissions = [
         </div>
 
         {/* Main Card */}
-        <div className="publication-card">
+        {/* <div className="publication-card">
           <p>
             <span className="bold">
               Edited volume opportunity (planned):
@@ -423,19 +415,19 @@ const submissions = [
             Selection will be based on peer review outcomes, thematic fit, and
             publication readiness.
           </p>
-        </div>
+        </div> */}
 
         {/* Small Cards */}
-        <div className="small-card">
+        {/* <div className="small-card">
           <h3>Edited Book</h3>
-        </div>
+        </div> */}
 
         <div className="small-card">
           <h3>
-            Special Book <span>Lesly Swartz – connect</span>
+            Edited Book Pathway: <span> Springer Nature (subject to approval).</span>
           </h3>
         </div>
-      </div>
+      </div> 
     </section>
 
  <section className="programme-section">
