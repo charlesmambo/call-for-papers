@@ -668,7 +668,8 @@
 
 /* LEFT SIDE */
 
-.about-left {
+.about-left,
+.explore-btn {
   width: 100%;
 }
 .about-description {
@@ -681,5 +682,27 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: var(--grid-gap);
+}
+.themes-section {
+  padding: var(--mobile-section-padding);
+  background-color: var(--bg-color);
+  text-align: left;
+}
+.themes-header .title {
+  font-size:var(--title-font);
+  font-weight: 700;
+  color: var(--headings-color);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+}
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--grid-gap);
+}
+.themes-footer {
+  margin-top: 30px;
 }
 }
