@@ -6,7 +6,7 @@
   background-color: #fff;
   border-bottom: 1px solid #e5e7eb;
   padding: var(--desktop-navbar-padding);
-  font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
 }
 
 /* Left section */
@@ -95,4 +95,53 @@
 
 .cta-button:hover {
   background-color: #d39e00;
+}
+.harm-btns{
+  display: none;
+}
+.harm-icons{
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.open{
+  color:#111827;
+}
+.close{
+  color: rgb(228, 0, 0);
+}
+
+.mobile-navbar{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+z-index: 100;
+background-color: white;
+padding: 1rem;
+width: 92%;
+box-sizing: border-box;
+border: 2px solid rgb(235, 235, 235);
+border-radius: 0.3rem;
+top: 5.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 92%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+ .navbar {
+  padding: var(--mobile-navbar-padding) !important;
+}
+.navbar-center{
+  display: none;
+}
+.navbar-left {
+  width: 200px;
+}
+.harm-btns{
+  display: flex;
+  align-items: center;
+}
 }

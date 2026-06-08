@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../navbar/Navbar.css'
 import { NavLink } from 'react-router-dom';
 import LOGO from '../../assets/utc-logo.png'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { CgCloseO } from "react-icons/cg";
 
 const Navbar = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
 
@@ -66,6 +74,71 @@ const Navbar = () => {
         </NavLink>
 
       </div>
+
+<div className="harm-btns">
+  {!isOpen ? (
+    <RxHamburgerMenu
+      className="harm-icons open"
+      onClick={() => setIsOpen(true)}
+    />
+  ) : (
+    <CgCloseO
+      className="harm-icons close"
+      onClick={closeMenu}
+    />
+  )}
+</div>
+            {/* Center: Navigation */}
+      {isOpen && (
+  <div className="mobile-navbar" onClick={closeMenu}>
+    <NavLink
+      to="/"
+      end
+      className={({ isActive }) =>
+        isActive ? "nav-item active" : "nav-item"
+      }
+      onClick={closeMenu}
+    >
+      Home
+    </NavLink>
+
+    <NavLink
+      to="/themes"
+      className={({ isActive }) =>
+        isActive ? "nav-item active" : "nav-item"
+      }
+      onClick={closeMenu}
+    >
+      Themes
+    </NavLink>
+
+    <NavLink
+      to="/about"
+      className={({ isActive }) =>
+        isActive ? "nav-item active" : "nav-item"
+      }
+      onClick={closeMenu}
+    >
+      About
+    </NavLink>
+
+    <NavLink
+      to="/call-for-papers"
+      className={({ isActive }) =>
+        isActive ? "nav-item active" : "nav-item"
+      }
+      onClick={closeMenu}
+    >
+      Call for Papers
+    </NavLink>
+
+    <NavLink to="/contact" onClick={closeMenu}>
+      <button className="cta-button">
+        Submit Abstract
+      </button>
+    </NavLink>
+  </div>
+)}
 
     </nav>
   );
