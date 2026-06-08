@@ -14,6 +14,7 @@
   --footer-desktop-section-padding: 3rem 10rem;
 
   --mobile-navbar-padding:1rem;
+   --mobile-section-padding: 3rem 1rem;
 
   --p-text-color:#5f6880;
   --headings-color:#0b1a46;
@@ -24,6 +25,7 @@
 
   --title-font:2.4rem;
   --hero-title-font:64px;
+  --mobile-hero-title-font:50px;
   --hero-p-text:1.2rem;
 
   --grid-gap:1.4rem;
@@ -34,6 +36,7 @@
   --desc-text:1.2rem;
   --card-text:1rem;
   --card-title-text:1.2rem;
+  --mobile-p-fontsize:18px;
 }
 *{
   margin: 0;

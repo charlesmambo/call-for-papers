@@ -153,17 +153,17 @@ const navigate = useNavigate();
 
           <div className="hero-info">
             <div className="info-item">
-              <SlCalender size={18} />
+              <SlCalender size={18} className="info-item-icon"/>
               <span>15–18 February 2027</span>
             </div>
 
             <div className="info-item">
-              <GrLocation size={18} />
+              <GrLocation size={18} className="info-item-icon"/>
               <span>Venue: Stellenbosch, South Africa</span>
             </div>
 
             <div className="info-item">
-              <LuGraduationCap size={18} />
+              <LuGraduationCap size={24} className="info-item-icon"/>
               <span>Stellenbosch University & University of the Western Cape</span>
             </div>
           </div>
