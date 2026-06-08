@@ -705,4 +705,28 @@
 .themes-footer {
   margin-top: 30px;
 }
+.dates-section {
+  padding: var(--mobile-section-padding);
+  text-align: left;
+}
+.dates-cards {
+  display: flex;
+  justify-content: space-between;
+ flex-wrap: wrap;
+  gap: 20px;
+}
+.date-card {
+  min-width: 160px;
+}
+.timeline {
+  margin: 0 auto 30px;
+}
+.title {
+  font-size: var(--title-font);
+  font-weight: 700;
+  color: var(--headings-color);
+  margin-bottom: 40px;
+}
+
+
 }
