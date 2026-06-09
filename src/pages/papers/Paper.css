@@ -798,3 +798,43 @@ text-align: center;
   line-height: 1.6;
   color: var(--p-text-color);
 }
+@media (max-width: 768px){
+ .call-for-papers {
+  align-items: center;
+  padding:var(--mobile-section-padding);
+}
+.call-for-papers-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.call-for-papers-content h2 {
+  color: var(--white-color);
+  font-size: var(--mobile-hero-title-font) !important;
+  line-height: 1.1;
+  letter-spacing: unset;
+}
+.call-for-papers p {
+  color:var(--white-color);
+  font-size: var(--hero-p-text);
+  line-height: 1.7;
+  font-weight: 400 !important;
+}
+.paper-conference {
+  padding: var(--mobile-section-padding);
+  display: flex;
+  justify-content: left;
+}
+.heading-row h2 {
+  font-size: var(--mobile-title-font);
+  line-height: 1.1;
+}
+.heading-row {
+  margin-bottom: 20px;
+}
+.paper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+}
