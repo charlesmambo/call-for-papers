@@ -64,7 +64,7 @@ const commitments = [
       <div className="content-wrapper">
         <p className="section-label">INTRODUCTION</p>
 
-        <h1 className="main-heading">What is AI–ETDS 2026?</h1>
+        <h2 className="main-heading">What is AI–ETDS 2026?</h2>
 
         <p className="description">
           AI-ETDS 2026 examines the transformative role of AI, emerging

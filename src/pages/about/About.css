@@ -189,5 +189,39 @@
 .abt-content p{
   margin-bottom: -0.7rem;
 }
+.ai-etds-intro {
+  width: 100%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: left;
+  padding: var(--mobile-section-padding);
+}
+.description {
+  width: 100%;
+  text-align: left;
+}
+.content-wrapper {
+  text-align: left;
+}
+.main-heading,
+.section-title {
+  font-size: var(--mobile-title-font);
+  margin-bottom: 18px;
+}
+.objectives-section {
+  padding: var(--mobile-section-padding);
+  display: flex;
+  justify-content: left;
+}
 
+.objectives-container {
+  text-align: left;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1.7rem !important;
+}
 }
