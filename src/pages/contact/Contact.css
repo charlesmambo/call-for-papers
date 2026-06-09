@@ -219,5 +219,32 @@ textarea:focus {
 .submit-btn:hover {
   opacity: 0.9;
 }
-
+@media (max-width: 768px){
+ .ctc-hero,
+ .contact-section {
+  padding:var(--mobile-section-padding);
+} 
+.ctc-content h2 {
+  font-size: var(--mobile-hero-title-font);
+}
+.contact-left h2{
+  font-size: var(--mobile-title-font);
+}
+.ctc-two{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-card {
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.contact-info {
+  width: 100%;
+}
+}
 
