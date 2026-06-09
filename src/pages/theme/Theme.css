@@ -138,3 +138,23 @@
   font-weight: 400;
 }
 
+@media (max-width: 768px){
+ .conference-section {
+  display: flex;
+  align-items: center;
+  padding: var(--mobile-section-padding);
+} 
+.conference-content h2 {
+  font-size: var(--mobile-hero-title-font);
+  line-height: 1;
+  letter-spacing: unset;
+  margin-bottom: 25px;
+}
+.tracks-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--grid-gap);
+  padding: var(--mobile-section-padding);
+}
+}
