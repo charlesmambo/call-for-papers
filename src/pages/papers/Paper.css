@@ -161,7 +161,6 @@
 .paper-target-section {
   background-color:#fff;
   padding: var(--desktop-section-padding);
-  font-family: "Inter", sans-serif;
 }
 
 /* Title */
@@ -215,7 +214,7 @@
 
 /* Text */
 .paper-target-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--p-text-color);
   margin: 0;
   line-height: 1.5;
@@ -837,4 +836,83 @@ text-align: center;
   flex-direction: column;
   gap: 20px;
 }
+.paper-objectives-section {
+  background: #f7f8fa;
+  display: flex;
+  padding: var(--mobile-section-padding);
+}
+.paper-objectives-list {
+    width: 100% !important;
+}
+.paper-section-heading h2 {
+  font-size: var(--title-font);
+  font-weight: 800;
+  color: var(--headings-color);
+  line-height: 1.1;
+}
+.paper-section-heading h2,
+.tp-title,
+.sb-title,
+.submission-heading h2,
+.dates-heading h2,
+.publication-heading h2,
+.programme-heading h2,
+.registration-heading h2,
+.cg-header h2 {
+  font-size: var(--mobile-title-font);
+}
+.registration-heading h2{
+  margin-bottom: -1rem;
+}
+.registration-number{
+  margin-bottom: -0.8rem;
+  display: block;
+}
+.registration-heading{
+  display: flex;
+  align-items: center;
+}
+.paper-target-section,
+.tp-section,
+.submission-section,
+.guide-section,
+.p-dates-section,
+.publication-section,
+.programme-section,
+.registration-section,
+.cg-container{
+  padding: var(--mobile-section-padding);
+}
+.paper-target-title{
+  font-size: var(--mobile-title-font);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.paper-target-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.paper-intro-text {
+  font-size: 1.2rem;
+}
+.tp-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 18px;
+}
+.tp-card p {
+  font-size: 1rem;
+  color: var(--p-text-color);
+  line-height: 1.5;
+  margin: 0;
+}
+.p-dates-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 18px;
+}
+
 }
