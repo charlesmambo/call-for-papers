@@ -3,6 +3,7 @@ import '../contact/Contact.css';
 import { FiUsers } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import { CiCalendar } from "react-icons/ci";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -49,7 +50,7 @@ const Contact = () => {
               <span className="email">iharun@uwc.ac.za</span>
             </div>
           </div>
-          </div>
+          
 
           <div className="contact-info">
             <div className="info-item">
@@ -68,40 +69,45 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          </div>
         </div>
 
-        {/* RIGHT */}
-        {/* <div className="contact-form">
-          <h3>Send a message</h3>
-          <p className="form-sub">
-            We typically respond within two business days.
+        <div className="submission-right">
+        <div className="sidebar-card">
+          <h3>Submit your manuscript</h3>
+
+          <p>
+            Submissions are managed through our secure online form. You'll
+            receive a tracking ID by email immediately.
           </p>
 
-          <div className="form-row">
-            <div>
-              <label>Full name</label>
-              <input type="text" />
+          <div className="sub-actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0P0O4X9ykPt1DfrVAwyePaST4dhhTUwkqAwrTBBHxwsVTpQ/viewform?usp=publish-editor" className="primary-btn">
+            Open submission form
+            <IoIosArrowRoundForward className='primary-btn-icon'/>
+          </a>
+          </div>
+
+          <div className="divider"></div>
+
+          <div className="sub-stats">
+            <div className="sub-stat-row">
+              <span>Article processing fee</span>
+              <strong>None</strong>
             </div>
-            <div>
-              <label>Email</label>
-              <input type="email" />
+
+            <div className="sub-stat-row">
+              <span>Average decision time</span>
+              <strong>6-8 weeks</strong>
+            </div>
+
+            <div className="sub-stat-row">
+              <span>Acceptance rate</span>
+              <strong>~28%</strong>
             </div>
           </div>
-
-          <div className="form-group">
-            <label>Subject</label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>Message</label>
-            <textarea rows="5"></textarea>
-          </div>
-
-          <button className="submit-btn">
-            Send message ✈
-          </button>
-        </div> */}
+        </div>
+      </div>
 
       </div>
     </section>
