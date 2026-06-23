@@ -13,6 +13,8 @@ import { RiTvLine } from "react-icons/ri";
 import { FiMessageSquare } from "react-icons/fi";
 import { VscSettings } from "react-icons/vsc";
 import { useNavigate } from 'react-router-dom';
+import SP from '../../assets/sp.png';
+import UO from '../../assets/uo.png';
 
 const Home = () => {
  const cards = [
@@ -346,6 +348,29 @@ const navigate = useNavigate();
           </div>
         ))}
       </div>
+    </section>
+
+    <section className="submission-section sp-container">
+      <div className="submission-header sp-header">
+        <span className="section-label sp-label" style={{ textTransform: "uppercase" }}>Official Publication Partner</span>
+        <h3>Publication Notice</h3>
+      </div>
+          <div className="submission-card sp-card">
+            <p> <b>Publication Notice:</b> Accepted and presented papers are expected to be published in a <b>Springer publication </b>, subject to peer review, editorial checks, and compliance with the publisher’s manuscript preparation requirements.</p>
+          </div>
+          <div className="sp-img-container">
+            <img src={SP} alt="" />
+          </div>
+    </section>
+
+    <section className="submission-section sp-container">
+      <div className="submission-header sp-header">
+        <span className="section-label sp-label" style={{ textTransform: "uppercase" }}>Partners</span>
+        <h3>Our Partners & Co-organisers</h3>
+      </div>
+          <div className="sp-img-container uo-container">
+            <img src={UO} alt="" />
+          </div>
     </section>
 
     </div>
