@@ -15,6 +15,8 @@ import { VscSettings } from "react-icons/vsc";
 import { useNavigate } from 'react-router-dom';
 import SP from '../../assets/sp.png';
 import UO from '../../assets/uo.png';
+import UTC from '../../assets/uc.png';
+import ST from '../../assets/stn.png';
 
 const Home = () => {
  const cards = [
@@ -363,13 +365,21 @@ const navigate = useNavigate();
           </div>
     </section>
 
-    <section className="submission-section sp-container">
+    <section className="submission-section sp-container uo-container">
       <div className="submission-header sp-header">
-        <span className="section-label sp-label" style={{ textTransform: "uppercase" }}>Partners</span>
+        <span className="section-label sp-label" style={{ textTransform: "uppercase" }}></span>
         <h3>Our Partners & Co-organisers</h3>
       </div>
-          <div className="sp-img-container uo-container">
+      <div className="uo-img-container">
+          <div className="uo-container">
             <img src={UO} alt="" />
+          </div>
+          <div className="uo-container">
+            <img src={UTC} alt="" />
+          </div>
+          <div className="uo-container">
+            <img src={ST} alt="" />
+          </div>
           </div>
     </section>
 
