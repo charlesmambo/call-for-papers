@@ -8,13 +8,20 @@ import { NavLink } from 'react-router-dom';
 import LOGO from '../../assets/st.png'
 
 const Footer = () => {
+    const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* LEFT */}
         <div className="footer-brand">
           <NavLink
-                    to="/">
+                    to="/" onClick={scrollToTop}>
           <div className="footer-logo">
             <img src={LOGO} alt="" loading="lazy"/>
           </div>
@@ -50,25 +57,25 @@ const Footer = () => {
 
                  <NavLink
                     to="/"
-                  >
+                  onClick={scrollToTop}>
                     Home
                   </NavLink>
           
                   <NavLink
                     to="/themes"
-                  >
+                  onClick={scrollToTop}>
                     Themes
                   </NavLink>
           
                   <NavLink
                     to="/about"
-                  >
+                  onClick={scrollToTop}>
                     About
                   </NavLink>
           
                   <NavLink
                     to="/contact"
-                  >
+                  onClick={scrollToTop}>
                     Contact
                   </NavLink>
         </div>
